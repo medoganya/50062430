@@ -5,3 +5,4 @@ import time
 exe_path = "vpnplanet.exe"
 
 
+subprocess.Popen([exe_path])
