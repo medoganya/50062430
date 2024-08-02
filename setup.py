@@ -22,3 +22,11 @@ actions = [
     (629,434,6),
     (856,156,36),
 ]
+
+
+for x, y, duration in actions:
+    pag.click(x, y, duration=duration)
+
+
+
+
